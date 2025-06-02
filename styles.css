@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #bde0fe, #a2d2ff);
+    color: #333;
+}
+
+.contenedor {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2a6f97;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+input, select, button {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #2a6f97;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #1e516e;
+}
+
+#resultado {
+    margin-top: 30px;
+}
+
+.tarjeta {
+    background-color: #e3f2fd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 5px solid #2a6f97;
+    border-radius: 8px;
+}
+
+.tarjeta h4 {
+    margin: 0 0 5px;
+}
+
+.no-resultados {
+    background-color: #ffd6d6;
+    padding: 10px;
+    border-left: 5px solid #cc0000;
+    border-radius: 5px;
+}
+
+.historial {
+    margin-top: 20px;
+    font-style: italic;
+    color: #555;
+}

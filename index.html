@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>LimpiAR - Servicio de Limpieza a Domicilio</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="contenedor">
+    <h1>🧼 LimpiAR</h1>
+    <p>Encontrá el servicio que estás necesitando sin salir de casa.</p>
+
+    <form id="formulario">
+        <label for="servicio">Servicio:</label>
+        <select id="servicio" required>
+        <option value="">Elegí un servicio</option>
+        <option value="Limpieza básica">Limpieza básica</option>
+        <option value="Limpieza profunda">Limpieza profunda</option>
+        <option value="Limpieza específica">Limpieza específica</option>
+        </select>
+
+        <label for="distancia">Distancia máxima (en km):</label>
+        <input type="number" id="distancia" step="0.1" min="0" required />
+
+        <label for="puntuacion">Puntuación mínima (1 a 5):</label>
+        <input type="number" id="puntuacion" step="0.1" min="1" max="5" required />
+
+        <button type="submit">🔍 Buscar trabajadores</button>
+    </form>
+
+    <div id="historial" class="historial"></div>
+    <div id="resultado"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
